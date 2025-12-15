@@ -10,3 +10,4 @@ Focused on consistency, hands-on practice, and learning in public.
 
 ### Goal
 Build real skills and real proof over time.
+This repository contains my daily learning logs and hands-on cybersecurity projects, organized separately.
