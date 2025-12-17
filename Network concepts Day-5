@@ -1,0 +1,141 @@
+# Networking Basics – TryHackMe
+
+This repository documents my **core networking fundamentals** learned through **TryHackMe**, including theory + practical exposure.
+
+---
+
+## 📌 What This Repo Covers
+
+* OSI Model (7 Layers)
+* TCP/IP Model (4 Layers)
+* IPv4 Addressing
+* Public vs Private IPs
+* Ports & Services
+* TCP vs UDP
+* TCP Three-Way Handshake
+* Encapsulation
+* Telnet Practical (TCP communication)
+
+This repo is meant to show **clear fundamentals**, not copy-paste theory.
+
+---
+
+## 🧱 OSI Model (Quick Overview)
+
+| Layer | Name         | Purpose                               |
+| ----- | ------------ | ------------------------------------- |
+| 7     | Application  | User-facing services (HTTP, FTP, DNS) |
+| 6     | Presentation | Encoding, encryption, compression     |
+| 5     | Session      | Session management                    |
+| 4     | Transport    | End-to-end delivery (TCP, UDP)        |
+| 3     | Network      | Routing & IP                          |
+| 2     | Data Link    | MAC addressing                        |
+| 1     | Physical     | Cables, signals                       |
+
+Mnemonic: **Please Do Not Throw Spinach Pizza Away**
+
+---
+
+## 🌐 TCP/IP Model
+
+| TCP/IP Layer | OSI Mapping |
+| ------------ | ----------- |
+| Application  | OSI 5,6,7   |
+| Transport    | OSI 4       |
+| Internet     | OSI 3       |
+| Link         | OSI 2       |
+
+---
+
+## 📍 IPv4 Addressing
+
+* IPv4 uses **32 bits (4 octets)**
+* Each octet range: **0–255**
+* Example: `192.168.66.89`
+
+### Private IP Ranges (RFC 1918)
+
+* `10.0.0.0 – 10.255.255.255`
+* `172.16.0.0 – 172.31.255.255`
+* `192.168.0.0 – 192.168.255.255`
+
+---
+
+## 🚪 Ports
+
+* Used to identify applications on a host
+* Range: **1–65535** (16-bit)
+
+Common ports:
+
+* HTTP → 80
+* HTTPS → 443
+* FTP → 21
+
+---
+
+## 🚚 TCP vs UDP
+
+### TCP – Transmission Control Protocol
+
+* Reliable
+* Connection-oriented
+* Uses **3-way handshake**
+* Used for web, email, file transfer
+
+### UDP – User Datagram Protocol
+
+* Fast
+* Connectionless
+* No delivery guarantee
+* Used for streaming, games, VoIP
+
+---
+
+## 🎁 Encapsulation
+
+Data is wrapped layer by layer:
+
+```
+Application Data
+→ TCP Segment / UDP Datagram
+→ IP Packet
+→ Ethernet / WiFi Frame
+```
+
+On the receiver side, the process is reversed.
+
+---
+
+## 🧪 Practical: Telnet
+
+Used `telnet` to interact directly with TCP services:
+
+* Echo server (Port 7)
+* Daytime server (Port 13)
+* HTTP server (Port 80)
+
+This helped understand:
+
+* TCP connections
+* Ports
+* Raw HTTP requests
+
+---
+
+## 🎯 Platform
+
+* Learning Platform: **TryHackMe**
+* Focus: Networking fundamentals for cybersecurity
+
+---
+
+## 🚀 Next Steps
+
+* Deeper TCP/IP analysis
+* Wireshark packet inspection
+* Network scanning (Nmap)
+
+---
+
+📌 *This repository represents my foundation in networking and will be expanded as I progress.*
